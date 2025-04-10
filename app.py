@@ -293,9 +293,6 @@ def loginc():
 def quitdef():
     app.quit()
 
-btn = tk.Button(text="", command="") (x=1,y=5)
-
-btn("selamın aleyküm", quitdef)
 
 userlb = tk.Button(text="Log In", command=loginc)
 userlb.place(x=203, y=72)
