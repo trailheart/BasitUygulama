@@ -245,7 +245,9 @@ def loginc():
                     randomcolor = ["white", "red", "green", "blue", "yellow", "cyan", "magenta", "orange", "purple"]
                     randomchosencolor = random.choice(randomcolor)
 
-                    welcometext = tk.Label(inapp, font="Verdana 100 bold", text="WELCOME", fg=randomchosencolor)
+                    welcometextpicker = userintf.get()
+
+                    welcometext = tk.Label(inapp, font="Verdana 100 bold", text="WELCOME, " + welcometextpicker, fg=randomchosencolor)
                     welcometext.place(x=0, y=0)
 
                     def center_label():
